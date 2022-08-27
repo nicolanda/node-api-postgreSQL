@@ -77,7 +77,7 @@ psql -d postgres -U me
 
 en la siguiente imagen se visualiza como deberia verse en al consola
 
-[creación de roles y cambio de usuario](https://github.com/nicolanda/node-api-postgreSQL/blob/main/src/public/imagen_2_prompt.JPG?raw=true);
+![creación de roles y cambio de usuario](https://github.com/nicolanda/node-api-postgreSQL/blob/main/src/public/imagen_2_prompt.JPG?raw=true);
 
 
 Read me en consturcción.
