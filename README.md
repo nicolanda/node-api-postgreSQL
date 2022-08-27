@@ -37,7 +37,7 @@ para verificar el usuario en el que nos encontramos para esto se utiliza el comm
 \conninfo
 ```
 
-![interface con comandos PSQL]()
+![interface con comandos PSQL](https://github.com/nicolanda/node-api-postgreSQL/blob/main/src/public/imagen_1_promt_start.JPG?raw=true)
 
 Si usamos la consola para el ingreso de estos comando se debería observar como la siguiente imagen.
 
