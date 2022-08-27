@@ -37,13 +37,47 @@ para verificar el usuario en el que nos encontramos para esto se utiliza el comm
 \conninfo
 ```
 
-![interface con comandos PSQL](https://github.com/nicolanda/node-api-postgreSQL/blob/main/src/public/imagen_1_promt_start.JPG?raw=true)
-
 Si usamos la consola para el ingreso de estos comando se debería observar como la siguiente imagen.
 
+![interface con comandos PSQL](https://github.com/nicolanda/node-api-postgreSQL/blob/main/src/public/imagen_1_promt_start.JPG?raw=true)
+
+Estos son otros comandos que puede llegar a ser muy usados en el commando promt de PSQL
 
 - <span style='color:red'>\q</span> : Comando usado para salir de la conexión psql.
 - <span style='color:red'>\c</span> : Comando usado para conectar a una nueva base de datos.
 - <span style='color:red'>\dt</span> : Comando usado obtner todos las tablas.
 - <span style='color:red'>\du</span> : Comando usado obtener todos los roles
 - <span style='color:red'>\list</span> : Comando usado para obtener la lista de base de datos.
+
+
+#### creación de roles en PostgresSQL
+
+para evitar el uso del super usaurio de postgres y practicar la creacion de usuarios, se utiliazan los siguientes comandos.
+
+```sql
+
+--creamos el rol 'me' con acesso login y contraseña
+create role me with login password 'password';
+
+--alteramos el rol 'me' para que pueda crear una base de dastos
+alter role me CREATEDB;
+
+--verificamos la creación del rol y sus permisos con \du
+
+\du
+
+--salimos del superusuario y cerramos la sesión con
+
+\q
+
+-- cambiamos la sesion 
+psql -d postgres -U me
+-- e ingresamos el password
+```
+
+en la siguiente imagen se visualiza como deberia verse en al consola
+
+[creación de roles y cambio de usuario]();
+
+
+Read me en consturcción.
